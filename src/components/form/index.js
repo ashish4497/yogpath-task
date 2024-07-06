@@ -22,6 +22,7 @@ const dispatch = useDispatch()
   const handleSubmit =  async (e) => {
     e.preventDefault();
     await dispatch(getFomeData(formData))
+      setFormData({ name: '', email: '', age: '' })
   };
 
   return (
